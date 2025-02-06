@@ -11,4 +11,6 @@ The ECBench dataset consists of 4324 question answer pairs $(Q,A^*)$ and corresp
 
 The question-answer pairs are available in [data/ECBench_qa.json](data/ECBench_qa.json) and the episode histories can be downloaded by following the instructions [here](data).
 
-## Baselines and Automatic Evaluation
+## Automatic Evaluation
+
+For model evaluation, please refer to [evaluation](evaluation/README.md).
