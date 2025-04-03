@@ -5,9 +5,16 @@ This document provides instructions on how to conduct `ECBench evaluation` for y
 To evaluate your model, you need to store the outputs in a specified format and then run a script that will handle the evaluation process. This requires setting specific environment variables before running the evaluation script.
 
 ## Steps for Evaluation
-Format Model Outputs:
+- Get Model Evaluation Results:
 
-Ensure that the model outputs are saved in a JSON format where each result is stored under the key 'pred_answer'. Here is an example structure:
+  - system prompt:
+```
+You are moving in an indoor environment. The image sequence is the scene you just saw. You are now staying at the last frame of the video. Please answer the question with one word or one sentence, as concise and accurate as possible.
+```
+
+- Format Model Outputs:
+
+   - Ensure that the model outputs are saved in a JSON format where each result is stored under the key 'pred_answer'. Here is an example structure:
 
 ```
    [
